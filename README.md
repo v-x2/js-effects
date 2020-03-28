@@ -1,7 +1,14 @@
+
+![NPM Package](https://badgen.net/npm/v/v2-js-effects)
+![License](https://badgen.net/npm/license/v2-js-effects)
+![Minified Size](https://badgen.net/bundlephobia/min/v2-js-effects)
+![Gzipped Size](https://badgen.net/bundlephobia/minzip/v2-js-effects)
+
+
 # V2 Javascript Effects
 
 V2 JS Effect is just another library that provides additional effects such as parallax.
-It's quite simple so far and it doesn't do so much, but if you want to collaborate in enhancing it I would be happy.
+It's quite simple so far and it doesn't do much, but if you want to collaborate in enhancing it I would be happy.
 
 ## Required
 
