@@ -3,7 +3,7 @@ import $ from 'jquery'
 import {V2Actions} from "./V2Action";
 import {V2Item} from "./V2Item";
 
- class V2Builder {
+ export class V2Builder {
     static v2Elements = [];
     static init = false;
     static lastScrollTop = 0;
@@ -29,7 +29,6 @@ import {V2Item} from "./V2Item";
     static initLibrary() {
         $(window).on("scroll", this.performScrollingTransformations.bind(this));
         this.init = true;
-        console.log("[V2] Init completed.");
     }
 
     static performScrollingTransformations() {
@@ -50,7 +49,7 @@ import {V2Item} from "./V2Item";
 
 }
 
- class V2Selector {
+ export class V2Selector {
     constructor(selector) {
         this.selector = selector;
     }
@@ -59,12 +58,9 @@ import {V2Item} from "./V2Item";
         V2Builder.add(this.selector, action, options);
     }
 
-
 }
 
-export const V2 = function(selector) {
-    return new V2Selector(V2Builder.select(selector));
-};
+
 
 
 

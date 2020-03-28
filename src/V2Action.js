@@ -2,10 +2,9 @@
 
 export class V2Actions {
     static from(action, options = {}) {
-        console.log(Object.values(V2Effects));
-        console.log(action);
+
         if(!Object.values(V2Effects).includes(action)) {
-            console.log("[ERROR] - The action used is unknown! ");
+            //console.log("[ERROR] - The action used is unknown! ");
             return null;
         }
         return new V2Action(action, options);
@@ -53,7 +52,7 @@ export class V2Actions {
                 this.performParallax(on, params.scrollDirection);
                 break;
             default:
-                console.log("[V2 - Error] I have not found any action for this transformation.");
+                //console.log("[V2 - Error] I have not found any action for this transformation.");
         }
     }
 
