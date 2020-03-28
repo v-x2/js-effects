@@ -5,7 +5,9 @@ const CompressionPlugin = require('compression-webpack-plugin');
 
 module.exports = {
     mode: 'production',
-    entry: './src/V2.js',
+    entry: {
+        "v2-js-effects": './src/V2.js'
+    },
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: '[name].min.js'
@@ -24,6 +26,9 @@ module.exports = {
                     test: /[\\/]node_modules[\\/]/,
                     name: "vendor",
                     chunks: "all"
+                },
+                main: {
+                    name: "v2-js-effects"
                 }
             }
         }

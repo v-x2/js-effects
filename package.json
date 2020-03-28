@@ -16,20 +16,20 @@
     "effects",
     "slide"
   ],
-  "author": "v2/dev",
+  "author": "v2-lab",
   "license": "Apache-2.0",
   "bugs": {
     "url": "https://github.com/v-x2/js-effects/issues"
   },
   "homepage": "https://github.com/v-x2/js-effects#readme",
   "dependencies": {
-    "@babel/plugin-proposal-class-properties": "^7.8.3",
     "jquery": "^3.4.1"
   },
   "devDependencies": {
     "@babel/core": "^7.9.0",
     "@babel/preset-env": "^7.9.0",
     "babel-loader": "^8.1.0",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
     "compression-webpack-plugin": "^3.1.0",
     "terser-webpack-plugin": "^2.3.5",
     "uglifyjs-webpack-plugin": "^2.2.0",

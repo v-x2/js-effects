@@ -1,9 +1,5 @@
 # V2 Javascript Effects
 
-[![NPM Package](https://img.shields.io/npm/v/rellax.svg)](https://www.npmjs.org/package/rellax)
-[![Minified Size](https://img.shields.io/bundlephobia/min/rellax.svg?label=minified)](https://bundlephobia.com/result?p=rellax)
-[![Gzipped Size](https://img.shields.io/bundlephobia/minzip/rellax.svg?label=gzipped)](https://bundlephobia.com/result?p=rellax)
-
 V2 JS Effect is just another library that provides additional effects such as parallax.
 It's quite simple so far and it doesn't do so much, but if you want to collaborate in enhancing it I would be happy.
 
