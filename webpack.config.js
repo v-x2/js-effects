@@ -1,7 +1,6 @@
 const path = require('path');
-const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 const CompressionPlugin = require('compression-webpack-plugin');
-
+const TerserPlugin = require('terser-webpack-plugin');
 
 module.exports = {
     mode: 'production',
@@ -10,28 +9,20 @@ module.exports = {
     },
     output: {
         path: path.resolve(__dirname, 'dist'),
-        filename: '[name].min.js'
+        filename: '[name].min.js',
+        library: "V2",
+        libraryTarget: "umd"
+    },
+    externals: {
+        jquery: {
+            commonjs: 'jquery',
+            commonjs2: 'jquery',
+            amd: 'jquery',
+            root: '$',
+        }
     },
     optimization: {
-        minimize: true,
-        minimizer: [
-            new UglifyJsPlugin({
-                test: /\.js(\?.*)?$/i,
-                exclude: /(node_modules|bower_components)/,
-            }),
-        ],
-        splitChunks: {
-            cacheGroups: {
-                vendors: {
-                    test: /[\\/]node_modules[\\/]/,
-                    name: "vendor",
-                    chunks: "all"
-                },
-                main: {
-                    name: "v2-js-effects"
-                }
-            }
-        }
+        minimize: true
     },
     module: {
         rules: [
