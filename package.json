@@ -1,6 +1,6 @@
 {
   "name": "v2-js-effects",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Just Another Library for JS Effects",
   "main": "dist/v2-js-effects.min.js",
   "scripts": {
