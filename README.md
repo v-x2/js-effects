@@ -5,7 +5,7 @@ It's quite simple so far and it doesn't do so much, but if you want to collabora
 
 ## Required
 
-- Jquery
+- Jquery (any version)
 
 
 ## Setup
